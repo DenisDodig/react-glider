@@ -243,7 +243,7 @@ const GliderComponent = React.forwardRef(
     );
 
     // initialize the glider
-    React.useLayoutEffect(() => {
+    React.useEffect(() => {
       const { current } = innerRef;
 
       if (current && isReady) {
@@ -306,7 +306,7 @@ const GliderComponent = React.forwardRef(
     ]);
 
     // update event listeners
-    React.useLayoutEffect(() => {
+    React.useEffect(() => {
       const { current } = innerRef;
 
       if (current) {
